@@ -10,7 +10,9 @@
 * jQuery
 
 ### 특징
-* 상단 Top-Nav 부분을 하나의 문서 구조로 2가지로 변형될 수 있도록 하였다. (Normal Mode, All-Menu Mode)
+* 상단 Global Navigation Bar 부분을 하나의 문서 구조로 2가지로 변형될 수 있도록 하였다. (Normal Mode, All-Menu Mode)
+* 여러 아이콘들을 Background Image Sprite를 처음으로 적용 시킴
+* 웹표준 준수
 
 ## 비고
 사정상 보안에 민감한 내용과 하부 컨텐츠 내용 등은 제거 함.  
