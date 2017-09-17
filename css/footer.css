@@ -1,0 +1,115 @@
+#footer{
+	float: left;
+	width: 100%;
+	margin: 50px 0px 30px 0px;
+}
+#footer .submenu{
+	height: 26px;
+	background-color: #e2e2e2;
+}
+#footer .submenu a{
+	float: left;
+	display: inline-block;
+	height: 11px;
+	color: transparent;
+	margin-top: 8px;
+}
+#footer .submenu a:link,
+#footer .submenu a:active,
+#footer .submenu a:visited{
+	text-decoration: none;
+	font-size: 7px;
+}
+
+#footer .submenu a.menu1{
+	background-image: url('../img/main/bottom_link_1.png');
+	background-repeat: no-repeat;
+	width: 102px;
+	margin-left: 30px;
+}
+#footer .submenu a.menu2{
+	background-image: url('../img/main/bottom_link_2.png');
+	background-repeat: no-repeat;
+	width: 107px;
+}
+
+#footer .submenu a.menu3{
+	background-image: url('../img/main/bottom_link_3.png');
+	background-repeat: no-repeat;
+	width: 66px;
+}
+#footer .submenu a.menu4{
+	background-image: url('../img/main/bottom_link_4.png');
+	background-repeat: no-repeat;
+	width: 74px;
+}
+#footer .bottom_bar{
+	clear: both;
+	background-image: url('../img/main/main_footer_full.gif');
+	background-repeat: no-repeat;
+	height: 100px;
+}
+
+#footer .bottom_bar ul a{
+	background-image: url('../img/main/footer_scroll_icon.gif');
+	background-repeat: no-repeat;
+	color: transparent;
+	font-size: 8px;
+}
+
+#footer .bottom_bar #slide_icon{
+	display: inline-block;
+	position: relative;
+	top: 20px;
+	left: 640px;
+	height: 30px;
+	width: 320px;
+}
+
+#footer .bottom_bar #slide_icon_next,
+#footer .bottom_bar #slide_icon_prev{
+	display: block;
+	position: relative;
+	width: 10px;
+	height: 40px;
+	cursor: pointer;
+}
+
+#footer .sliderkit-nav-clip{
+	position: relative;
+	left: 10px;
+	top: 0px;
+}
+
+#footer .bottom_bar a{
+	font-size: 1px;
+	display: inline-block;
+}
+#footer .bottom_bar a:link,
+#footer .bottom_bar a:visited,
+#footer .bottom_bar a:active{
+	text-decoration: none;
+	color: transparent;
+}
+#footer .bottom_bar #slide_icon_prev{
+	background-image: url('../img/forum_img.png');
+	background-repeat: no-repeat;
+	background-position: -140px 0px;
+	left: 0px;
+	top: -50px;
+}
+#footer .bottom_bar #slide_icon_next{
+	background-image: url('../img/forum_img.png');
+	background-repeat: no-repeat;
+	background-position: -160px 0px;
+	left: 310px;
+	top: -88px;
+}
+
+#footer .submenu a:link,
+#footer .submenu a:visited,
+#footer .submenu a:active{
+	color: #dddddd\9;
+	font-size: 1px\9;
+	vertical-align: bottom\9;
+}

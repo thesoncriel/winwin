@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+"http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<title>popup_config</title>
+		<link rel="stylesheet" type="text/css" href="css/popup_config.css" />
+		<link rel="stylesheet" type="text/css" href="css/popup.css" />
+		<script type="text/javascript" src="http://code.jquery.com/jquery-1.8.1.min.js"></script>
+		<script type="text/javascript" src="js/jquery.form.js"></script>
+		<script type="text/javascript" src="js/popup.js"></script>
+	</head>
+
+	<body>
+		<div id="popup_config">
+			<form id="form_PopupConfig" action="">
+				<fieldset>
+					<ul>
+						<li>
+							<label>제목</label>
+							<p>
+								<input id="textBox_Title" type="text" name="title" />
+							</p>
+						</li>
+						<li class="form_2cols">
+							<label>공지시작일</label>
+							<p>
+								<input id="calendar_DateStart" type="text" name="sdate" value="2012-09-01" />
+							</p>
+		
+							<label>공지종료일</label>
+							<p>
+								<input id="calendar_DateEnd" type="text" name="edate" value="2012-09-30" />
+							</p>
+						</li>
+						<li class="form_2cols">
+							<label>가로길이</label>
+							<p>
+								<input id="textBox_Width" type="text" name="width" value="330" />
+							</p>
+		
+							<label>세로길이</label>
+							<p>
+								<input id="textBox_Height" type="text" name="height" value="300" />
+							</p>
+						</li>
+						<li>
+							<label>쿠키생성여부</label>
+							<p>
+								하루동안 이창을 열지 않음 사용 : 
+								<input id="radioBox_CookieYes" type="radio" name="cookie" checked="checked" />예
+								<input id="radioBox_CookieNo" type="radio" name="cookie" />아니오
+							</p>
+						</li>
+						<li>
+							<label>팝업콜여부</label>
+							<p>
+								팝업존에만 표시 : 
+								<input id="radioBox_CallYes" type="radio" name="call" checked="checked" />예
+								<input id="radioBox_CallNo" type="radio" name="call" />아니오
+							</p>
+						</li>
+						<li>
+							
+						</li>
+						<li>
+							<label>링크경로</label>
+							<p>
+								<input id="textBox_LinkPath" type="text" name="linkPath" />
+							</p>
+						</li>
+					</ul>
+					<p class="controls_bottom">
+						<a href="" id="button_PopupConfigCancel">취소</a>
+						<input id="button_PopupConfigOK" type="submit" value="확인" />
+					</p>
+					<input id="isconfig" type="hidden" value="true" />
+				</fieldset>
+			</form>
+			<form id="form_ImgUpload" action="file_uploader.jsp" method="POST" enctype="multipart/form-data">
+								<fieldset>
+									<label>이미지</label>
+									<p>
+										<input id="fileBox_Image" type="file" name="imgFile" value="파일선택" />
+									</p>
+								</fieldset>
+							</form>
+			<div id="popupContact">
+	        	<h2 id="popup_title">대.중소기업 동반성장 토론회 개최 자료</h2>
+	        	
+	        	<a id="popup_link" href="http://www.skbt.co.kr"><img src="120810_popup.gif" alt="팝업 이미지" /></a>
+	        	<p id="contactArea">
+	        		
+	        	</p>
+	        	<a id="popupContactClose">x</a>
+	        	<span id="neverOpenOnDay"><input id="checkBox_neverOpenOnDay" type="checkbox" />오늘 하루동안 보이지 않기</span>
+	        </div>
+	        <div id="backgroundPopup"> </div>
+        </div>
+	</body>
+</html>

@@ -1,0 +1,11 @@
+<div id="popupContact">
+        	<h2 id="popup_title">대.중소기업 동반성장 토론회 개최 자료</h2>
+        	
+        	<a id="popup_link" href="http://www.google.co.kr"><img src="../upload/popup/120810_popup.gif" alt="팝업 이미지" /></a>
+        	<p id="contactArea">
+        		
+        	</p>
+        	<a id="popupContactClose">x</a>
+        	<span id="neverOpenOnDay"><input id="checkBox_neverOpenOnDay" type="checkbox" />오늘 하루동안 보이지 않기</span>
+        </div>
+        <div id="backgroundPopup"> </div>

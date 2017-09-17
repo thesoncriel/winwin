@@ -1,0 +1,145 @@
+/* CSS Initialize */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em,
+font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody,
+tfoot, thead, tr, th, td {
+border:0pt none;
+font-family:inherit;
+font-size:100%;
+font-style:inherit;
+font-weight:inherit;
+margin:0pt;
+padding:0pt;
+vertical-align:baseline;
+}
+
+/*
+ * 팝업 설정 스타일
+ */
+
+#popup_config{
+	height: 800px;
+}
+
+#popup_config h2 {
+	font-family: "돋움";
+	font-weight: bold;
+	font-size: 24pt;
+}
+
+
+#form_PopupConfig{
+	width: 530px;
+	margin: 5px;
+}
+
+
+
+#form_PopupConfig fieldset{
+	border: transparent none 0px;
+	font-family: "돋움";
+	font-size: 13px;
+	color: #666;
+}
+
+#form_PopupConfig a:link,
+#form_PopupConfig a:active,
+#form_PopupConfig a:visited,
+#button_PopupConfigOK{
+	text-decoration: none;
+	color: #000;
+	font-size: 13px;
+	font-family: "돋움";
+	font-weight: bold;
+}
+
+#form_PopupConfig ul li{
+	display: block;
+	vertical-align: middle;
+	border-bottom: #A0B0EF solid 1px;
+	width: 530px;
+	height: 30px;
+}
+
+#form_PopupConfig label,
+#form_PopupConfig li p{
+	display: inline-block;
+}
+#form_PopupConfig label{
+	margin: 5px;
+	width: 90px;
+	height: 30px;
+}
+#form_PopupConfig p{
+	padding: 0;
+}
+#form_PopupConfig .form_2cols p{
+	width: 130px;
+}
+
+#textBox_Title,
+#calendar_DateStart,
+#textBox_Width{
+	
+}
+
+
+#textBox_Title,
+#textBox_LinkPath,
+#fileBox_Image,
+#calendar_DateStart,
+#calendar_DateEnd,
+#textBox_Width,
+#textBox_Height
+{
+	margin: 4px 0 4px 0;
+}
+
+#radioBox_CookieYes,
+#radioBox_CookieNo,
+#radioBox_CallYes,
+#radioBox_CallNo
+{
+	margin: 7px 0 4px 0;
+}
+
+#textBox_Title,
+#textBox_LinkPath,
+#fileBox_Image{
+	width: 420px;
+}
+#calendar_DateStart,
+#calendar_DateEnd,
+#textBox_Width,
+#textBox_Height {
+	width: 110px;
+	
+}
+#form_PopupConfig #fileBox_Image{
+	
+}
+
+#form_PopupConfig p.controls_bottom{
+	text-align: right;
+}
+
+
+#button_PopupConfigCancel,
+#button_PopupConfigOK
+{
+	display: inline-block;
+	background-color: transparent;
+	border: transparent none 0px;
+	cursor: pointer;
+	
+	background-image: url('../img/forum_img.png');
+	background-position: 0px -18px;
+	width: 53px;
+	height: 25px;
+
+	margin-top: 5px;
+	text-align: center;
+	vertical-align: middle;
+	padding-top: 0px;
+	line-height: 23px;
+	
+}

@@ -1,0 +1,457 @@
+body {
+ 
+}
+*{
+    margin:0;
+    padding:0;
+}
+ul, li, ul li{
+    list-style:none;
+}
+
+li{
+    margin-bottom:3px;
+}
+
+.sub_wrap {
+	float: left;
+    width: 789px;
+    margin:0;
+    padding:0;
+}
+
+.location{
+    text-align:right;
+    padding-right:20px;
+    font-size:11px;
+    width:775px;
+    height:14px;
+    color:#666666;
+    background: url("../img/sub/sub_location_bg.gif");
+    padding-top:13px;
+    font-family:dotum;
+}
+
+.location img {
+    padding-right: 5px;
+}
+
+.pos{
+    color: blue;
+}
+
+.contact_man span{
+    padding-right:30px;
+}
+
+
+/*sub_1_1*/
+
+.sub_title{
+    width:738px;
+    height:68px;
+    padding-top:10px;
+    background: url("../img/sub/sub_1_title.gif");
+    font-family:dotum;
+    font-size:20px;
+    font-weight:bold;
+    padding-left:51px;
+}
+
+.history{
+    float: left;
+    width:625px;
+}
+
+.history_year{
+    float: left;
+    width:164px;
+}
+
+
+.table_style2{
+    width:689px;
+    font-size: 12px;
+    border-collapse: collapse;
+    border:1px solid #aec0c6;
+    border-top:2px solid #1189cc;
+    color: #767676;
+    margin-left: 61px;
+    font-family:dotum;
+}
+
+.table_style2 tr th,
+.table_style2 tr td{
+    padding: 8px;
+}
+
+.table_style2 thead tr th{
+    color: #1189CC;
+}
+
+.table_style2 tbody tr th {
+    font-weight: normal;
+}
+
+.table_style2 tbody{
+    text-align:center;
+}
+
+.type1{
+    text-align:left;
+    text-indent: 10px;
+}
+
+.table_bold{
+    font-weight: bold;
+    text-align:center;
+}
+
+.table_style2 tbody th, td{
+    border:1px solid #aec0c6;
+}
+
+.table_style2 thead th, td{
+    border:1px solid #aec0c6;
+}
+
+.table_style2 thead th{
+    background-color: #F9F9F9;
+}
+
+/*sub_1_2*/
+
+#adress{
+    margin-left:82px;
+    font-size:12px;
+    color: #929292;
+    width:647px;
+}
+
+#traffic{
+    margin-top:30px;
+    margin-left:82px;
+}
+
+#subway{
+    width:647px;
+    height: 23px;
+    background: url("../img/sub/sub_1_subway.gif");
+    background-repeat: no-repeat;
+    text-indent:70px;
+    font-size:13px;
+    padding-top:1px;
+    color: #929292;
+    margin-top:12px;
+}
+
+#traffic ul li ul li strong{
+    color:#626262;
+}
+
+#bus{
+    width:647px;
+    height: 85px;
+    background: url("../img/sub/sub_1_bus.gif");
+    background-repeat: no-repeat;
+    text-indent:70px;
+    font-size:13px;
+    padding-top:8px;
+    color: #929292;
+}
+
+#mbus{
+    width:647px;
+    height: 67px;
+    background: url("../img/sub/sub_1_mbus.gif");
+    background-repeat: no-repeat;
+    text-indent:70px;
+    font-size:13px;
+    padding-top:9px;
+    color: #929292;
+}
+
+#airport{
+    width:647px;
+    height: 26px;
+    background: url("../img/sub/sub_1_airport.gif");
+    background-repeat: no-repeat;
+    text-indent:70px;
+    font-size:13px;
+    padding-top:9px;
+    color: #929292;
+    margin-bottom: 30px;
+}
+
+.traffic_font{
+    color:#2db03d;
+    font-weight:bold;
+    
+}
+
+#car{
+    
+}
+
+#car li{
+    font-size:13px;
+    color: #929292;
+    padding:0px 0px 10px 0px;
+}
+
+.sub_menu{
+    width:625px;
+    height:35px;
+    margin-bottom: 58px;
+    margin-top: 35px;
+    margin-left: 60px;
+}
+
+.sub_head{
+    background: url("../img/boxType1Bg.png");
+    background-repeat: no-repeat;
+    display: block;
+    width:650px;
+    height:52px;
+    padding: 20px 200px 5px 20px;
+    color:#666666;
+    font-size:12px;
+    font-weight: bold;
+    margin-left: 40px;
+    
+}
+
+.sub_contact{
+    margin-top:px;
+    margin-left:40px;
+    background: url("../img/boxType2Bg.png");
+    background-repeat: no-repeat;
+    display: block;
+    width:689px;
+    height: 99px;
+    border:1px solid transparent;
+    padding-left: 60px;
+}
+
+.sub_contact_long{;
+    margin-left:40px;
+    background: url("../img/boxType3Bg.png");
+    background-repeat: no-repeat;
+    display: block;
+    width:689px;
+    height: 223px;
+    border:1px solid transparent;
+    padding-left: 60px;
+}
+
+.contact_depart{
+    font-weight:bold;
+    margin-top:20px;
+    color: #049BDA;
+    font-size:13px;
+}
+
+.contact_man{
+    margin-top:12px;
+    font-size:12px;
+    color: #535353;
+}
+
+#sub_3_1_1_table{
+    width:632px;
+    height:227px;
+    background:url("../img/sub/sub_content.png");
+    font-size: 12px;
+    margin-left: 60px;
+}
+
+.sub_contact ul li{
+    line-height:1em;
+}
+/*sub3_1*/
+
+.sub_content2{
+    width:689px;
+    margin-left:40px;
+    margin-top:50px;
+}
+
+.sub_content2 ul li {
+    color:#666666;
+    font-size:12px;
+    line-height:1.8em;
+}
+
+.sub_head_3{
+    background: url("../img/boxType1Bg.png");
+    background-repeat: no-repeat;
+    display: block;
+    width:650px;
+    height:52px;
+    padding: 20px 200px 5px 20px;
+    color:#666666;
+    font-size:12px;
+    font-weight: bold;
+    margin-left: 40px;
+    text-indent:10px;
+    padding-top:25px;
+}
+
+.contact_location{의 숙련 인력으로 생산 · 연구 · 기술인력, 기능인력, 마케팅, 내무 등 전분야에서 
+    padding-top:20px;
+    margin-left:40px;
+}
+
+.contact_list li ul li{
+    font-size:12px;
+    
+}
+
+.contact_list ul{
+    line-height:1.5em;
+}
+
+.sub_list li{
+    list-style-image: url('../img/list_icon.gif');
+    font-size: 12px;
+    margin-bottom: 1em;
+    margin-top:10px;
+    margin-left: 65px;
+    color:#666666;
+    line-height:1.5em;
+}
+
+.sub_list li ul li{
+    margin: 0;
+    list-style:none;
+}
+
+
+.table_title{
+    color: #08438d;
+    font-weight:bold;
+    padding-bottom:10px;
+    font-size:12px;
+    margin-left:12px;
+}
+
+.list_content{
+    text-indent: 30px;
+    padding:5px;
+}
+
+.law_title{
+    color:#0996d2;
+}
+
+.list_content li ul li{
+    color:#666666;
+    line-height: 1.5em;
+}
+
+.composition{
+    margin-top:50px;
+    margin-left:70px;
+}
+
+.composition ul li{
+    font-size:12px;
+    color:#666666;
+    line-height:1.5em;
+}
+
+
+
+/*3-2-2*/
+
+.sub_content{
+    width:689px;
+    margin-left:30px;
+}
+
+
+.table_style{
+    width:689px;
+    font-size: 12px;
+    text-align: center;
+    border-collapse: collapse;
+    margin-bottom:30px;
+    border:1px solid #aec0c6;
+    border-top:2px solid #1189cc;
+    margin-left:15px;
+    line-height:1.6em;
+    font-family:dotum;
+    color:#666666
+    
+}
+
+.table_style thead tr th{
+    color: #1189CC;
+}
+
+.table_style tbody th, td{
+    border:1px solid #aec0c6;
+    padding:10px;
+}
+
+.table_style thead th, td{
+    border:1px solid #aec0c6;
+    color:#666666;
+}
+
+.table_style thead th{
+    background-color: #F9F9F9;
+    height:40px;
+}
+
+.table_style tbody tr td ul li{
+    text-align:left;
+    color:#666666;
+    padding-left: 10px;
+}
+
+.table_style3 {
+     width:620px;
+    font-size: 12px;
+    padding:10px 0px 10px 30px ;
+    margin-left:-10px;
+    border-collapse: collapse;
+    margin-bottom:30px;
+    border:1px solid #aec0c6;
+    border-top:2px solid #1189cc;
+    line-height:1.6em;
+    font-family:dotum;
+    color:#666666
+    
+}
+
+
+.algin_left{
+    text-align:left;
+}
+
+.table_inborder1{
+    font-size:15px;
+    font-weight:bold;
+    color:#626262;
+}
+
+.table_inborder{
+    background-color:skyblue;
+    font-size:15px;
+    font-weight:bold;
+    color:#626262;
+}
+
+.period_color{
+    color:blue;
+}
+
+.bold{
+    font-weight: bold;
+}
+
+.download_style{
+    text-align: center;
+    margin-top: 20px;
+}

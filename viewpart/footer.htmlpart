@@ -1,0 +1,27 @@
+		<div id="footer">
+			<div class="submenu">
+				<a href="#" class="menu1">이메일무단수집거부</a>
+				<a href="#" class="menu2">개인정보보호정책</a>
+				<a href="#" class="menu3">사이트맵</a>
+				<a href="#" class="menu4">찾아오시는 길</a>
+			</div>
+			<div class="bottom_bar">
+				<div id="slide_icon" class="sliderkit">
+					<div class="sliderkit-nav">
+						<div class="sliderkit-nav-clip">
+							<ul>
+								<li><a href="#" class="menu1"><img src="img/icon/footer_slide_icon_01.gif" width="150" height="26" alt="동반성장Cyber종합지원센터" /></a></li>
+								<li><a href="#" class="menu2"><img src="img/icon/footer_slide_icon_02.gif" width="150" height="26" alt="대.중소기업협력재단" /></a></li>
+								<li><a href="#" class="menu3"><img src="img/icon/footer_slide_icon_03.gif" width="150" height="26" alt="전국경제인연합회" /></a></li>
+								<li><a href="#" class="menu4"><img src="img/icon/footer_slide_icon_04.gif" width="150" height="26" alt="중소기업중앙회" /></a></li>
+								<li><a href="#" class="menu5"><img src="img/icon/footer_slide_icon_05.gif" width="150" height="26" alt="대한상공회의소" /></a></li>
+								<li><a href="#" class="menu6"><img src="img/icon/footer_slide_icon_06.gif" width="150" height="26" alt="국민신문고" /></a></li>
+							</ul>
+						</div>
+						<div id="slide_icon_prev" class="sliderkit-btn sliderkit-nav-btn sliderkit-nav-prev"><a href="#" title="Scroll to the left">Previous</a></div>
+						<div id="slide_icon_next" class="sliderkit-btn sliderkit-nav-btn sliderkit-nav-next"><a href="#" title="Scroll to the right">Next</a></div>
+					</div>
+				</div>
+				
+			</div>
+		</div>

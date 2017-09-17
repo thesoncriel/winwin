@@ -1,0 +1,314 @@
+#forum {
+	float: left;
+	font-family: "돋움", Verdana, "Trebuchet MS", Helvetica, sans-serif;
+	width: 700px;
+	text-align: center;
+	margin-top: 40px;
+	margin-left: 40px;
+}
+#forum table{
+	padding: 0px;
+	border-collapse: collapse;
+	text-align: left;
+}
+#forum table caption {
+	font-weight: bold;
+	font-size: 18pt;
+	font-family: "돋움";
+	color: #333333;
+	text-align: left;
+	margin-bottom: 75px;
+}
+#forum table thead {
+	font-size: 11px;
+	color: #555;
+	font-weight: bold;
+}
+#forum table th{
+    background-image:url('../img/forum_img.png');
+    background-repeat: no-repeat;
+    background-position: 0px -150px;
+    height: 34px;
+    text-align: center;
+    vertical-align: middle;
+}
+#forum table th.config{
+	background-image:url('../img/forum_img.png');
+	background-position: -1px -150px;
+}
+#forum table th#first_col{
+	background-image:url('../img/forum_img.png');
+	background-position: -1px -150px;
+}
+th.number, 
+th.type, 
+th.subject, 
+th.file{
+	background-position: -20px 0px;
+}
+th.number{
+    width: 70px;
+}
+th.type{
+    width: 77px;
+}
+th.subject{
+    width: 360px;
+}
+th.file{
+    width: 50px;
+}
+th.date{
+    width: 83px;
+    background-position: -548px 0px;
+    
+}
+
+#forum table tbody {
+	color: #555;
+	font-size: 12px;
+	
+}
+#forum table tr{
+	height: 30px;
+}
+
+#forum table tbody a.notice_config {
+	display: inline-block;
+	border: transparent none 0px;
+	background-color: transparent;
+	background-image: url('../img/forum_img.png');
+	background-repeat: no-repeat;
+	background-position: 0px -63px;
+	width: 14px;
+	height: 14px;
+	cursor: pointer;
+	color: transparent;
+	font-size: 10px;
+	letter-spacing: -1em;
+}
+
+#forum table td {
+	border-bottom: 1px solid #ddd;
+	padding: 5px;
+	vertical-align: middle;
+}
+#forum a:link,
+#forum a:visited,
+#forum a:active {
+	text-decoration: none;
+	color: #6f6f6f;
+}
+
+
+#forum table td.type_notice,
+#forum table td.subject_notice{
+	font-weight: bold;
+}
+#forum table td.type_notice{
+	text-align: center;
+}
+#forum table td.subject_notice{
+	padding-left: 14px;
+	background-image: url('../img/forum_img.png');
+	background-repeat: no-repeat;
+	background-position: 0px -190px;
+}
+#forum table td strong.new{
+	position: relative;
+	background-image: url('../img/forum_img.png');
+	background-repeat: no-repeat;
+	background-position: 0px -80px;
+	width: 10px;
+	height: 10px;
+	color: transparent;
+}
+
+#forum table td.number,
+#forum table td.type, 
+#forum table td.file,
+#forum table td.date {
+	text-align: center;
+}
+#forum table td.file{
+    background-image: url('../img/icon/ico_pdf.gif');
+    background-repeat: no-repeat;
+    background-position: 18px 8px;
+    color: transparent;
+    cursor: default;
+}
+
+#forum table td.date{
+    font-size: 11px;
+}
+
+
+
+
+
+
+
+
+
+/*
+ * 게시판 페이지 컨트롤 부분
+ */
+#forum #page_control{
+    vertical-align: bottom;
+    position: relative;
+    padding: 0px;
+    text-align: center;
+    margin: 20px 0 7px 0;
+}
+#forum #page_control a.page_num{
+	display: inline;
+	padding-left: 4px;
+	font-family: Verdana;
+	font-size: 10px;
+	border-left: #6f6f6f solid 1px;
+	height: 10px;
+}
+#forum #page_control a.page_num_1st{
+	border-left: transparent none 0px;
+}
+#forum #page_control a:link,
+#forum #page_control a:visited,
+#forum #page_control a:active
+{
+    margin: 0;
+    color: #6f6f6f;
+}
+#forum #page_control a.page_num_curr:link,
+#forum #page_control a.page_num_curr:visited,
+#forum #page_control a.page_num_curr:active{
+    color: #333;
+    font-weight: bold;
+    font-size: 10px;
+}
+
+#forum #page_control #first_page,
+#forum #page_control #prev_page,
+#forum #page_control #next_page,
+#forum #page_control #last_page{
+    background-image: url('../img/forum_img.png');
+    background-repeat: no-repeat;
+    display: inline-block;
+    width: 21px;
+    height: 12px;
+    text-align: center;
+    font-size: 8px;
+    
+    font-family:"Arial Black";
+    color: transparent;
+}
+#forum #page_control #first_page{
+	background-position: -60px 0px;
+}
+#forum #page_control #prev_page{
+	background-position: -60px -20px;
+}
+#forum #page_control #next_page{
+	background-position: -90px -20px;
+}
+#forum #page_control #last_page{
+	background-position: -90px -0px;
+}
+#forum #button_deleteSubmit,
+#forum #writing{
+	display: inline-block;
+	position: absolute;
+	width: 53px;
+	background-image: url('../img/forum_img.png');
+	background-repeat: no-repeat;
+	background-position: 0px -18px;
+	font-size: 13px;
+	font-weight: bold;
+	color: #000;
+
+	text-align: center;
+	cursor: pointer;
+}
+#forum #button_deleteSubmit{
+	right: 80px;
+	height: 25px;
+	border: transparent none 0px;
+}
+#forum #writing{
+	right: 20px;
+	height: 21px;
+	padding-top: 4px;
+}
+#forum a#writing:link,
+#forum a#writing:visited,
+#forum a#writing:active{
+	font-size: 13px;
+	font-weight: bold;
+	color: #000;
+}
+
+
+#forum #search_control{
+    display: block;
+	position: relative;
+    text-align: right;
+    right: 20px;
+    margin-top: 40px;
+}
+
+#forum #search_control #comboBox_type{
+    
+}
+#forum #search_control #textBox_keyword{
+    width: 300px;
+}
+#forum #search_control #button_search{
+    background-image: url('../img/forum_img.png');
+    background-repeat: no-repeat;
+    background-position: -60px -43px;
+    padding: 0; 
+    border: transparent none 0px;
+    cursor:pointer;
+    width: 58px;
+    height: 20px;
+    color: transparent; 
+}
+
+#form_Notice{
+	display: none;
+	position:fixed;
+	_position:absolute; /* hack for internet explorer 6*/
+	top: 0;
+	left: 0;
+	background-color: #ffffff;
+	border: #00B0EF double 3px;
+	padding: 30px 40px 40px 40px;
+	z-index:2;
+}
+#form_Notice #notice_close{
+	position: absolute;
+	top: 0;
+	left: 270px;
+}
+#backgroundPopup{
+display:none;
+position:fixed;
+_position:absolute; /* hack for internet explorer 6*/
+height:100%;
+width:100%;
+top:0;
+left:0;
+background:#ffffff;
+border:1px solid #cecece;
+z-index:1;
+}
+
+/* IE hack */
+#forum table td.file{
+    font-size: 1px\9;
+    text-align: left\9;
+    vertical-align: top\9;
+    color: white\9;
+}
+#forum #search_control #button_search{
+    *overflow:visible; 
+}

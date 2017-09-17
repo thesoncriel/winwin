@@ -1,0 +1,1 @@
+@font-face {font-family:MalgunGothic; src:url(images/MalgunGothic.eot);}

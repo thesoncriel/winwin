@@ -1,0 +1,648 @@
+<?xml version="1.0" charset="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+"http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+        <meta charset="UTF-8" />
+        <link rel="stylesheet" type="text/css" href="common.css" />
+        <script  src="http://code.jquery.com/jquery-latest.min.js"></script>
+        <script>
+			$(document).ready(function() {
+
+				$("#menu_1").hover(function() {
+					this.src = this.src.replace("_off", "_on");
+				}, function() {
+					this.src = this.src.replace("_on", "_off");
+				});
+
+				$("#menu_2").hover(function() {
+					this.src = this.src.replace("_off", "_on");
+				}, function() {
+					this.src = this.src.replace("_on", "_off");
+				});
+
+				$("#menu_3").hover(function() {
+					this.src = this.src.replace("_off", "_on");
+				}, function() {
+					this.src = this.src.replace("_on", "_off");
+				});
+
+				$("#menu_4").hover(function() {
+					this.src = this.src.replace("_off", "_on");
+				}, function() {
+					this.src = this.src.replace("_on", "_off");
+				});
+
+				$("#menu_5").hover(function() {
+					this.src = this.src.replace("_off", "_on");
+				}, function() {
+					this.src = this.src.replace("_on", "_off");
+				});
+
+				/*메인 공지사항*/
+				$("#notice_1").hover(function() {
+					this.src = this.src.replace("_off", "_on");
+				}, function() {
+					this.src = this.src.replace("_on", "_off");
+				});
+
+				$("#notice_2").hover(function() {
+					this.src = this.src.replace("_off", "_on");
+				}, function() {
+					this.src = this.src.replace("_on", "_off");
+				});
+
+				/*
+				*  All Menu  이벤트 등록
+				*/
+
+				//alert($("#all_menu").toString());;
+
+				$("#all_menu").click(function() {
+					var nodeFullMenu = document.getElementById("full_menu");
+					var sVisible = nodeFullMenu.style.visibility.toString();
+
+					if (sVisible === "visible") {
+						nodeFullMenu.style.visibility = "hidden";
+					} else {
+						nodeFullMenu.style.visibility = "visible";
+					}
+					
+				});
+				/*메인 메뉴 마우스 오버기능*/
+				$("#menu_1").hover(function(){
+                   var node = document.getElementById("li_indent").childNodes[2];
+                   var sVisible = node.style.visibility;
+                    
+                   hiddenAllSubMenu(); 
+                                  
+                   if (sVisible === "hidden"){
+                       node.style.visibility = "visible";
+                   }
+                });
+                
+                $("#menu_2").hover(function(){
+                   var node = document.getElementById("li_indent2").childNodes[2];
+                   var sVisible = node.style.visibility;
+                    
+                   hiddenAllSubMenu(); 
+                                  
+                   if (sVisible === "hidden"){
+                       node.style.visibility = "visible";
+                   }
+                });
+			});
+			/*상단 서치 클릭시 글자 클리어 */
+			function clearText(field) {
+				if (field.defaultValue == field.value)
+					field.value = "";
+			}
+			function hiddenAllSubMenu(){
+                var nodeList = $("#main_menu ul");
+                
+                for(var i = 0; i < nodeList.length; i++){
+                    nodeList[i].style.visibility = "hidden";
+                }
+            }
+            /*왼쪽 슬라이드 메뉴 이미지 온오프 */
+			function m_change(m_id, m_src) {
+				if (-1 == m_src.indexOf("_on")) {
+					for (var i = 1; i < 7; i++) {
+						var UpMid = "m_" + i;
+						var ObjUpImg = document.getElementById(UpMid);
+						ObjUpImg.src = ObjUpImg.src.replace("_on", "_off");
+					}
+
+					var ClickMid = "m_" + m_id;
+					var ObjClickImg = document.getElementById(ClickMid);
+
+					ObjClickImg.src = ObjClickImg.src.replace("_off", "_on");
+				}
+
+			}
+        </script>
+
+        <title>동반성장위원회</title>
+        <meta name="Keywords" content="동반성장위원회" />
+    </head>
+
+    <body>
+        <div id="wrap">
+            <!--상단 로고, 서치, 사이트맵-->
+            <!--상단 로고-->
+            <div id="top">
+                <div id="main_logo">
+                    <a href="#"><img src="img/main/main_logo.gif" /></a>
+                </div>
+                <!--상단 서치-->
+                <div id="search">
+                    <input type="text" value="search" onFocus="clearText(this)" />
+                    <a href="#"><img src="img/main/search_click.gif"></a>
+                </div>
+                <!--상단 sitemap-->
+                <div id="sitemap_div">
+                    <ul id="sitemap">
+                        <li>
+                            <a href="#"><img src="img/main/sitemap_home.gif" alt="홈"></a>
+                        </li>
+                        <li>
+                            <a href="#"><img src="img/main/sitemap_map.gif" alt="사이트맵"></a>
+                        </li>
+                        <li>
+                            <a href="#"  id="all_menu"><img src="img/main/sitemap_all.png" alt="모든 메뉴" /></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!--모든 메뉴 보기-->
+            <div id="full_menu">
+                <div id="sitemap_close">
+                    <a href="#"><img src="img/main/sitemap_close.gif"></a>
+                </div>
+                <div id="sitemap_1">
+                    <ul>
+                        <li class="li_1">
+                            <a href="">위원회소개</a>
+                            <ul class="li_2">
+                                <li>
+                                    <a href="#">위원회소개</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="li_2">구성 및 조직도</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="li_2">위원회 명단</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="li_2">연혁</a>
+                                </li>
+                                <li>
+                                    <a href="#">CI소개/영문표기</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="li_1">
+                            <a href="#" >위원장</a>
+                        </li>
+                        <ul class="li_2">
+                            <li>
+                                <a href="#">인사말</a>
+                            </li>
+                            <li>
+                                <a href="#">프로필</a>
+                            </li>
+                            <li>
+                                <a href="#">위원장 기고</a>
+                            </li>
+                            <li>
+                                <a href="#">위원장 동정</a>
+                            </li>
+                        </ul>
+                        <li class="li_1">
+                            <a href="#">사무국 소개</a>
+                        </li>
+                        <li class="li_1">
+                            <a href="#">찾아오시는길</a>
+                        </li>
+                    </ul>
+                </div>
+                <div id="sitemap_2">
+                    <ul>
+                        <li class="li_1">
+                            <a href="#">공지사항</a>
+                        </li>
+                        <li class="li_1">
+                            <a href="#">보도자료</a>
+                        </li>
+                        <li class="li_1">
+                            <a href="#">언론 속 위원회</a>
+                        </li>
+                        <li class="li_1">
+                            <a href="#">뉴스레터</a>
+                        </li>
+                        <li class="li_1">
+                            <a href="#">홍보자료</a>
+                            <ul class="li_2">
+                                <li>
+                                    <a href="#">카툰</a>
+                                </li>
+                                <li>
+                                    <a href="#">사진자료</a>
+                                </li>
+                                <li>
+                                    <a href="#">동영상자료</a>
+                                </li>
+                                <li>
+                                    <a href="#">홍보인쇄물</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <div id="sitemap_3">
+                    <ul>
+                        <li class="li_1">
+                            <a href="#">동반성장위원회 주요기능</a>
+                            <ul class="li_2">
+                                <li>
+                                    <a href="#">동반성장지수 산정·공표</a>
+                                </li>
+                                <li>
+                                    <a href="#">중소기업 적합 업종·품목 선정</a>
+                                </li>
+                                <li>
+                                    <a href="#">12개 업종별 위원회 운영</a>
+                                </li>
+                                <li>
+                                    <a href="#">사회적 이슈 발굴 논의</a>
+                                </li>
+                                <li>
+                                    <a href="#">MRO 실무위원회</a>
+                                </li>
+                                <li>
+                                    <a href="#">전문인력유출 심의위원회</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="li_1">
+                            <a href="#">동반성장 인프라구축 사업</a>
+                            <ul class="li_2">
+                                <li>
+                                    <a href="#">성과공유제 확산</a>
+                                </li>
+                                <li>
+                                    <a href="#">공공기관 동반성장 평가</a>
+                                </li>
+                                <li>
+                                    <a href="#">동반성장대상 포상</a>
+                                </li>
+                                <li>
+                                    <a href="#">동반성장포럼 운영</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="li_1">
+                            <a href="#"> 협력증진 사업</a>
+                            <ul class="li_2">
+                                <li>
+                                    <a href="#">구매조건부 신제품 개발지원</a>
+                                </li>
+                                <li>
+                                    <a href="#">민·관 공동투자 기술개발 지원사업</a>
+                                </li>
+                                <li>
+                                    <a href="#">생산성 혁신 파트너쉽 지원사업</a>
+                                </li>
+                                <li>
+                                    <a href="#">대학연구기관 보유기술 직접 사업화 지원사업</a>
+                                </li>
+                                <li>
+                                    <a href="#">해외동반진출 지원사업</a>
+                                </li>
+                                <li>
+                                    <a href="#">중소기업간 협업 지원사업</a>
+                                </li>
+                                <li>
+                                    <a href="#">수탁기업협의회 결성·운영사업</a>
+                                </li>
+                                <li>
+                                    <a href="#">기술자료 임치제도 운영사업</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="li_1">
+                            <a href="#">대기업의 동반성장 투자재원 출연재도</a>
+                        </li>
+                    </ul>
+                </div>
+                <div id="sitemap_4">
+                    <ul>
+                        <li class="li_1">
+                            <a href="#">동반성장 우수사례</a>
+                        </li>
+                        <li class="li_1">
+                            <a href="#">정책 자료실</a>
+                        </li>
+                        <li class="li_1">
+                            <a href="#">사진 자료실</a>
+                        </li>
+                        <li class="li_1">
+                            <a href="#">동영상 자료실</a>
+                        </li>
+                        <li class="li_1">
+                            <a href="#">법령 및 운영규정</a>
+                        </li>
+                        <li class="li_1">
+                            <a href="#">관련 사이트</a>
+                        </li>
+                    </ul>
+                </div>
+                <div id="sitemap_5">
+                    <ul>
+                        <li class="li_1">
+                            <a href="#">동반성장 정책 제안</a>
+                        </li>
+                        <li class="li_1">
+                            <a href="#">동반성장업무문의</a>
+                        </li>
+                        <li class="li_1">
+                            <a href="#">신문고</a>
+                        </li>
+                        <li class="li_1">
+                            <a href="#">자주하는 질문(FAQ)</a>
+                        </li>
+                        <li class="li_1">
+                            <a href="#">개인정보보호정책</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!--상단 메인메뉴-->
+            <div id="menu_layout">
+                <div id="menu" class="menu">
+                    <ul id="main_menu" >
+                        <li id="li_indent"><a href=""><img src="img/main/menu_1_off.png" alt="위원회소개" id="menu_1" class="btn-slide" /></a>
+                            <ul style="position: fixed; visibility: hidden">
+                                <li >
+                                    <a href="#">위원회 소개</a>
+                                </li>
+                                <li>
+                                    <a href="#">위원장</a>
+                                </li>
+                                <li>
+                                    <a href="#">위원회 구성</a>
+                                </li>
+                                <li>
+                                    <a href="#">사무국 소개</a>
+                                </li>
+                                <li>
+                                    <a href="#">찾아오시는 길</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li id="li_indent2"><a href=""><img src="img/main/menu_2_off.png" alt="위원회소식" id="menu_2" /></a>
+                            <ul style="position: fixed; visibility: hidden">
+                                <li>
+                                    <a href="#">공지사항</a>
+                                </li>
+                                <li>
+                                    <a href="#">보도자료</a>
+                                </li>
+                                <li>
+                                    <a href="#">언론 속 위원회</a>
+                                </li>
+                                <li>
+                                    <a href="#">뉴스레터</a>
+                                </li>
+                                <li>
+                                    <a href="#">홍보자료</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li><img src="img/main/menu_3_off.png" alt="사업소개" id="menu_3" />
+                            <ul style="display: none;">
+                                <li>
+                                    <a href="#">동반성장위원회 주요기능</a>
+                                </li>
+                                <li>
+                                    <a href="#">동반성장 인프라구축 사업</a>
+                                </li>
+                                <li>
+                                    <a href="#">대 중소기업 협력증진 사업</a>
+                                </li>
+                                <li>
+                                    <a href="#">대기업의 동반성장 투자재원 출연 제도</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li><img src="img/main/menu_4_off.png" alt="정보광장" id="menu_4" />
+                            <ul style="display: none;">
+                                <li>
+                                    <a href="#">동반성장 우수사례</a>
+                                </li>
+                                <li>
+                                    <a href="#">정책 자료실</a>
+                                </li>
+                                <li>
+                                    <a href="#">사진 자료실</a>
+                                </li>
+                                <li>
+                                    <a href="#">동영상 자료실</a>
+                                </li>
+                                <li>
+                                    <a href="#">법령 및 운영규정</a>
+                                </li>
+                                <li>
+                                    <a href="#">관련 사이트</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li><img src="img/main/menu_5_off.png" alt="소통광장" id="menu_5" />
+                            <ul style="display: none;">
+                                <li>
+                                    <a href="#">동반성장 정책 제안</a>
+                                </li>
+                                <li>
+                                    <a href="#">동반성장업무문의</a>
+                                </li>
+                                <li>
+                                    <a href="#">신문고</a>
+                                </li>
+                                <li>
+                                    <a href="#">자주하는 질문(FAQ)</a>
+                                </li>
+                                <li>
+                                    <a href="#">개인정보 처리방침</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!--좌측 메뉴바-->
+            <div id="left_slide">
+                <ul id="left_slide_menu">
+                    <li><img id="m_1" src="img/main/mainbusiness_01_on.jpg" onClick="m_change(1,this.src)" onFocus="m_change(1,this.src)" />
+                    </li>
+                    <li ><img id="m_2" src="img/main/mainbusiness_02_off.jpg" onClick="m_change(2,this.src)" onFocus="m_change(2,this.src)" />
+                    </li>
+                    <li ><img id="m_3" src="img/main/mainbusiness_03_off.jpg" onClick="m_change(3,this.src)" onFocus="m_change(3,this.src)" />
+                    </li>
+                    <li ><img id="m_4" src="img/main/mainbusiness_04_off.jpg" onClick="m_change(4,this.src)" onFocus="m_change(4,this.src)" />
+                    </li>
+                    <li ><img id="m_5" src="img/main/mainbusiness_05_off.jpg" onClick="m_change(5,this.src)" onFocus="m_change(5,this.src)" />
+                    </li>
+                    <li ><img id="m_6" src="img/main/mainbusiness_06_off.jpg" onClick="m_change(6,this.src)" onFocus="m_change(6,this.src)" />
+                    </li>
+                </ul>
+            </div>
+            <!--중앙 내용들-->
+            <div id="main_contents">
+                <!--중앙 인트로-->
+                <div id="main_intro"><img src="img/main/intro.gif">
+                </div>
+                <!--오른쪽 상단 팝업-->
+                <div id="right_pop">
+                    <div id="right_pop_top">
+                        <ul id="right_pop_no" class="list_style">
+                            <li style="margin-left: 2px; margin-top: 7px;"><img src="img/main/small_1_on.gif">
+                            </li>
+                            <!--<li class="right_pop_s"><img src="img/main/small_2_off.gif">
+                            </li>
+                            <li class="right_pop_s"><img src="img/main/small_3_off.gif">
+                            </li>
+                            <li class="right_pop_s"><img src="img/main/small_4_off.gif">
+                            </li>
+                            <li style="text-indent:145px; margin-top: 7px;"><img src="img/main/small_play.gif">
+                            </li>
+                            <li class="right_pop_s"><img src="img/main/small_stop.gif">
+                            </li>-->
+                        </ul>
+                    </div>
+                    <div id="right_pop_image">
+                        <a href="#"><img src="img/main/popupzone_img01.gif"></a>
+                    </div>
+                </div>
+                <!--공지 미리보기 창-->
+                <div id="preview" style="margin: 0;">
+                    <div id="preview_top">
+                        <a href="#" style="width:96px; height: 24px; display: inline-block; background-image: url('img/main/small_notice_on.png'); color:transparent;">공지사항</a>
+                        <a href="#" style="margin-left:250px;"><img src="img/main/small_more.png"></a>
+                        <table width="383" style=" border-top-width:1px;  border-top-style: solid; border-top-color: #D1D2D3;">
+                            <tr>
+                                <td height="18"></td>
+                            </tr>
+                            <tr>
+                                <td class="notice_font" >사업공고</td>
+                                <td class="notice_content_font">11년 중소기업 적합업종 제조업 권고 사항 <img src="img/main/small_new.gif"></td>
+                                <td width="70px;" class="date_font">2012-08-16</td>
+                            </tr>
+                            <tr>
+                                <td class="notice_font">사업공고</td>
+                                <td class="notice_content_font">'11년 동반성장지수 산정 발표</td>
+                                <td class="date_font">2012-06-27</td>
+                            </tr>
+                            <tr>
+                                <td class="notice_font">그룹회원</td>
+                                <td class="notice_content_font">11년 중소기업 적합업종 제조업 권고 사항</td>
+                                <td class="date_font">2012-05-27</td>
+                            </tr>
+                            <tr>
+                                <td class="notice_font">프리랜서</td>
+                                <td class="notice_content_font">'11년 동반성장지수 산정 발표</td>
+                                <td class="date_font">2012-05-10</td>
+                            </tr>
+                            <tr>
+                                <td class="notice_font">사업공고</td>
+                                <td class="notice_content_font">11년 중소기업 적합업종 제조업 권고 사항</td>
+                                <td class="date_font">2012-04-16</td>
+                            </tr>
+                        </table>
+                    </div>
+
+                    <div id="preview_bottom">
+
+                        <a href="#" style="width:96px; height: 24px; display: inline-block; background-image: url('img/main/small_report_on.png'); color:transparent;">보도자료</a>
+                        <a href="#" style="margin-left:250px;"><img src="img/main/small_more.png"></a>
+                        <table  width="383" style=" border-top-width:1px;  border-top-style: solid; border-top-color: #D1D2D3;">
+                            <tr>
+                                <td height="18"></td>
+                            </tr>
+                            <tr>
+                                <td class="notice_content_font2">보도)동반위 유 위원장, 전경련 허 회장 회동.. <img src="img/main/small_new.gif"></td>
+                                <td  class="date_font">2012.05-17</td>
+                            </tr>
+                            <tr>
+                                <td class="notice_content_font2">보도)대중소기업협력재단, 기술 연구회 협..</td>
+                                <td class="date_font">2012.05-17</td>
+                            </tr>
+                            <tr>
+                                <td class="notice_content_font2">보도)강원지역 대중소기업구매상담회 개최..</td>
+                                <td class="date_font">2012.05-17</td>
+                            </tr>
+                            <tr>
+                                <td class="notice_content_font2">보도)동반성장위원회 유장희 위원장 전주지..</td>
+                                <td class="date_font">2012.05-17</td>
+                            </tr>
+                        </table>
+
+                    </div>
+                </div>
+                <!--자료실 미리보기-->
+                <div id="prev_content">
+                    <!--사진 자료실-->
+                    <div id="prev_content_top">
+                        <a href="#" style="width:63px; height: 42px; display: inline-block; background-image: url('img/main/small_picture.gif'); color:transparent;"></a>
+                        <a href="#" class="small_more_position"><img src="img/main/small_more.png"></a>
+                        <table cellspacing="0" cellpadding="0" width="240px;" style="text-align: left;">
+                            <tr align="left">
+                                <td><img src="img/main/small_picture_1.png"></td>
+                                <td><img src="img/main/small_picture_2.png"></td>
+                            </tr>
+                            <tr style="text-indent: 6px;">
+                                <td class="pre_text">2012년 3월 20일..</td>
+                                <td class="pre_text">MBC-TV 파워매..</td>
+                            </tr>
+                        </table>
+                    </div>
+                    <!--동영상 자료실-->
+                    <div id="prev_content_bottom">
+                        <a href="#" style="width:76px; height: 30px; display: inline-block; background-image: url('img/main/small_movie.gif'); color:transparent;" ></a>
+                        <a href="#" class="small_more_position2"><img src="img/main/small_more.png"></a>
+                        <table cellspacing="0" cellpadding="0" width="240px;" style="text-align: left;">
+                            <tr align="left">
+                                <td><img src="img/main/small_movie_1.png"></td>
+                                <td><img src="img/main/small_movie_2.png"></td>
+                            </tr>
+                            <tr style="text-indent: 6px;">
+                                <td class="pre_text">MBC-TV 파워매..</td>
+                                <td class="pre_text">동반성장 1주년..</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+                <!--하단 아이콘-->
+                <div id="icon_bottom">
+                    <ul>
+                        <li>
+                            <a href="#"><img src="img/main/main_icon_blog.jpg" alt="위원회블로그"></a>
+                        </li>
+                        <li>
+                            <a href="#"><img src="img/main/main_icon_newsletter.jpg" alt="뉴스레터신청"></a>
+                        </li>
+                        <li>
+                            <a href="#"><img src="img/main/main_icon_notice.jpg" alt="공지사항"></a>
+                        </li>
+                        <li>
+                            <a href="#"><img src="img/main/main_icon_good.jpg" alt="우수사례"></a>
+                        </li>
+                        <li>
+                            <a href="#"><img src="img/main/main_icon_sinmungo.jpg" alt="신문고"></a>
+                        </li>
+                        <li>
+                            <a href="#"><img src="img/main/main_icon_way.jpg" alt="오시는길"></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!--bottom-->
+            <div id="bottom">
+
+                <div id="bottom_link">
+                    <a href="#"><img src="img/main/bottom_link_1.png" alt="이메일무단수집거부"></a>
+                    <a href="#"><img src="img/main/bottom_link_2.png" alt="개인정보보호정책"></a>
+                    <a href="#"><img src="img/main/bottom_link_3.png" alt="사이트맵"></a>
+                    <a href="#"><img src="img/main/bottom_link_4.png" alt="찾아오시는길"></a>
+                </div>
+
+            </div>
+            <!--푸터-->
+            <div id="footer">
+                <img src="img/main/main_footer_full.jpg">
+            </div>
+        </div>
+    </body>
+</html>
